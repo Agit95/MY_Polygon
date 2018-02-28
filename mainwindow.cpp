@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->textEdit->setDisabled(true);
     ui->OK_button->setDisabled(true);
     ui->Clear_button->setDisabled(true);
+    this->setFixedSize(this->width(),this->height());
 
     connect(ui->Clear_button,SIGNAL(clicked()),this,SLOT(Clear_button_kliked()));
     connect(ui->OK_button,SIGNAL(clicked()),this,SLOT(Ok_button_kliked()));
